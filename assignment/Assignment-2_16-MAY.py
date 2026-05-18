@@ -12,7 +12,7 @@ def twoSum2(target,lst):
     for x in lst:
         new_target = target-x
         if (new_target in mp):
-            ans.append((x,new_target))
+            ans.append((new_target,x))
         mp.add(x)
     print(tuple(ans))
 
