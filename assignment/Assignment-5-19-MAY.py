@@ -23,7 +23,11 @@ for x in students:
 print(ans)
 
 # Find students with same marks
-
+map_dict = {}
+for key,value in students.items():
+    map_dict.setdefault(value, []).append(key)
+res = {k:v for k,v in map_dict.items() if len(v)>1}
+print(res)
 
 # Print grades
 for x in students:
