@@ -228,3 +228,12 @@ def arbitrary_named_args(**args):
     print("Let's print them:")
     for k, v in args.items():
         print(" * key:", k, "value:", v)
+
+#You can pass functions around as parameters
+def square_number (n):
+    return n ** n
+def do_something(f, x):
+    return f(x)
+print(do_something(square_number, 3)) # 27
+
+
