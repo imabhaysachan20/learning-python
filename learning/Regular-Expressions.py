@@ -15,6 +15,7 @@ abhay.com
 321-555-4321
 123.555.1234
 123*555*1234
+123--555--1234
 800-555-1234
 900-555-1234
 
@@ -26,6 +27,11 @@ Mr Smith
 Ms Davis
 Mrs. Robinson
 Mr. T
+
+cat
+bat
+rat
+lat
 '''
 
 sentence = 'Start a sentence and then bring it to an end'
@@ -119,3 +125,79 @@ sentence = 'Start a sentence and then bring it to an end'
 # for x in patter9.finditer(text_to_search):
 #     print(x)
 
+sentence = "hey there welcome to this regular expression tut"
+
+# pattern10 = re.compile(r'^hey')
+
+# for x in pattern10.finditer(sentence):
+#     print(x)
+
+# pattern11 = re.compile(r'^ther')
+
+# for x in pattern11.finditer(sentence):
+#     print(x) 
+
+# pattern12 = re.compile(r'tut$')
+
+# for x in pattern12.finditer(sentence):
+#     print(x)
+
+# pattern12 = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
+# for x in pattern12.finditer(text_to_search):
+#     print(x)
+
+
+
+# []      - Matches Characters in brackets single character
+# [^ ]    - Matches Characters NOT in brackets
+# |       - Either Or
+# ( )     - Group
+
+
+# pattern13 = re.compile(r'\d\d\d[-.]\d\d\d[-.]\d\d\d\d')
+
+# for x in pattern13.finditer(text_to_search):
+#     print(x)
+
+# pattern14 = re.compile(r'[89]00[-.]\d\d\d[-.]\d\d\d\d')
+# for x in pattern14.finditer(text_to_search):
+#     print(x)
+
+# '-' inside [] if in start is normal - otherwise in between it is range 0-5
+
+# pattern14 = re.compile(r'[0-2]')
+# for x in pattern14.finditer(text_to_search):
+#     print(x)
+
+# pattern14 = re.compile(r'[a-zA-Z]')
+# for x in pattern14.finditer(text_to_search):
+#     print(x)
+
+# '^' OUTSIDE THE CHARACTER SET MATCHES BEGINNING OF THE STRING INSIDE [] ACTS AS NOT
+ 
+# pattern14 = re.compile(r'[^a-zA-Z0-9]')
+# for x in pattern14.finditer(text_to_search):
+#     print(x)
+
+# pattern15 = re.compile(r'[^c]at')
+# for x in pattern15.finditer(text_to_search):
+#     print(x)
+
+# *       - 0 or More
+# +       - 1 or More
+# ?       - 0 or One
+# {3}     - Exact Number
+# {3,4}   - Range of Numbers (Minimum, Maximum)
+
+# pattern16 = re.compile('\d{3}[-.]\d{3}[-.]\d{4}')
+# for x in pattern16.finditer(text_to_search):
+#     print(x)
+
+# pattern17 = re.compile(r'Mr\.?\s[A-Z]\w*')
+# for x in pattern17.finditer(text_to_search):
+#     print(x)
+
+
+# pattern18 = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*')
+# for x in pattern18.finditer(text_to_search):
+#     print(x)
