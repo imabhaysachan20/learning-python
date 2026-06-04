@@ -201,3 +201,34 @@ sentence = "hey there welcome to this regular expression tut"
 # pattern18 = re.compile(r'M(r|s|rs)\.?\s[A-Z]\w*')
 # for x in pattern18.finditer(text_to_search):
 #     print(x)
+
+
+# # returns a list containing all matches
+# txt = "The rain in Spain"
+# x = re.findall("ai", txt)
+# print(x)
+
+
+# # The search() function searches the string for a match, and returns a Match object if there is a match.
+
+# txt = "The rain in Spain"
+# x = re.search("\s", txt)
+
+# print("The first white-space character is located in position:", x.start())
+
+
+# # The split() function returns a list where the string has been split at each match:
+# txt = "The rain in Spain"
+# x = re.split("\s", txt)
+# print(x)
+
+
+
+# txt = "The rain in Spain"
+# x = re.sub("\s", "9", txt)
+# print(x)
+
+
+# txt = "The rain in Spain"
+# x = re.sub("\s", "9", txt, 2)
+# print(x)
